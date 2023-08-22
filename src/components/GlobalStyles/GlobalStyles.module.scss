@@ -1,0 +1,47 @@
+:root{
+    --black: #000;
+    --brown: #615555;
+    --default-layout-header-height: 56px;
+    --default-background-color: #fff;
+    --default-color: #333;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1.4rem;
+    line-height: 20px;
+    color: #464646;
+    text-rendering: optimizeSpeed;
+    background-color: var(--default-background-color);
+    min-width: 1150px;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+input {
+    outline: none;
+    border: none;
+}

@@ -1,0 +1,155 @@
+.wrapper-sub{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.label{
+    // padding: 14px 0;
+    margin-right: 9.56px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #292929;
+    display: flex;
+    align-items: center;
+}
+
+.item-link{
+    &:hover{
+        .label{
+            color: var(--default-color-hover);
+        }
+    }
+
+}
+
+
+.item-link{
+    position: relative;
+
+    &:hover{
+        .sub{
+            display: block;
+        }
+    }
+}
+
+.menu-nav .item:hover{
+    .sub{
+        display: block;
+    }
+}
+
+.active{
+    .label{
+        color: var(--default-color-hover);
+    }
+}
+
+.wrapper{
+    position: absolute;
+    padding: 24px;
+    top: 100%;
+    background: #fff;
+    box-shadow: 2px 4px 8px rgba(0,0,0,.08);
+    border-radius: 0 0 8px 8px;
+    width: 100%;
+    left: 0;
+    border-top: 2px solid #0098d1;
+    z-index: 10;
+}
+
+
+.category{
+    width: 400px;
+    padding-right: 24px;
+    border-right: 1px solid #ebebeb;
+    margin-right: 24px;
+    
+    .title{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #292929;
+        margin-bottom: 24px;
+        display: block;
+
+        &:hover{
+            color: #0098d1;
+        }
+    }
+
+    .list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .item{
+            display: block;
+            width: calc(50% - 10px);
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            color: #454545;
+            margin-top: 16px;
+
+            &:hover{
+                .label{
+                    color: #0098d1;
+                }
+            }
+        }
+
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+}
+
+.news{
+    width: calc(100% - 424px);
+    display: flex;
+
+    .box-category-item{
+        width: calc(33.33% - 16px);
+        margin-left: 0;
+        margin-right: 24px;
+
+    }
+
+    .image{
+        display: block;
+        margin-bottom: 8px;
+        position: relative;
+        height: 125px;
+
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            margin: auto;
+            object-fit: cover;
+
+        }
+    }
+
+    .title a, .title h3{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: #292929;
+        display: block;
+
+        &:hover{
+            color: #0098d1;
+        }
+    }
+}

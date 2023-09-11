@@ -4,13 +4,21 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Libraries
 React Quill: https://www.npmjs.com/package/react-quill
+
 Font Awesome: https://fontawesome.com/how-to-use/on-the-web/using-with/react
+
 React Router: https://reactrouter.com/web/guides/quick-start
+
 Axios: https://www.npmjs.com/package/axios
+
 Moment: https://momentjs.com/docs/
+
 Moment Timezone: https://momentjs.com/timezone/docs/
+
 SASS: https://sass-lang.com/documentation
+
 Classnames: https://www.npmjs.com/package/classnames
+
 Babel: https://babeljs.io/docs/en/
 
 

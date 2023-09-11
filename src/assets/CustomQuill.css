@@ -1,0 +1,37 @@
+.ql-editor {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.ql-editor h1, .ql-editor h2, .ql-editor h3, .ql-editor h4, .ql-editor h5, .ql-editor h6{
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.ql-editor h1{
+    font-size: 34px;
+    line-height: 48px;
+}
+
+.ql-editor h2{
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.ql-editor p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+
+.ql-editor p, .ql-editor ol, .ql-editor ul, .ql-editor pre, .ql-editor blockquote, .ql-editor h1, .ql-editor h2, .ql-editor h3, .ql-editor h4, .ql-editor h5, .ql-editor h6{
+    margin: 0 0 24px 0 !important;
+    padding: 0;
+}

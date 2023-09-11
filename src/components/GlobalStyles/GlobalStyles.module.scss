@@ -1,9 +1,16 @@
+// @import "~react-quill/dist/quill.snow.css";
+
 :root{
     --black: #000;
     --brown: #615555;
     --default-layout-header-height: 56px;
     --default-background-color: #fff;
     --default-color: #333;
+    --default-color-hover: #0098d1;
+    --default-size-header-top: 40px;
+    --default-size-header-bottom: 50px;
+    --default-size-header-middle: 119px;
+
 }
 
 *{
@@ -21,12 +28,13 @@ html{
 body{
     font-family: 'Merriweather', sans-serif;
     font-size: 1.4rem;
-    line-height: 20px;
+    // line-height: 20px;
     color: #464646;
     text-rendering: optimizeSpeed;
     background-color: var(--default-background-color);
     min-width: 1150px;
     margin: 0;
+
 }
 
 a{
@@ -45,3 +53,23 @@ input {
     outline: none;
     border: none;
 }
+
+.section-main{
+    width: calc(100% - 385px);
+}
+
+.section-sub{
+    width: 325px;
+    margin-left: 60px;
+}
+
+
+
+///////////
+// .box-news-main{
+//     background: #240303;
+//     background-color: #240303;
+//     display: flex;
+//     margin-bottom: 24px;
+// }
+

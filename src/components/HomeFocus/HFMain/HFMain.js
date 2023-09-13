@@ -42,7 +42,7 @@ function HFMain() {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('container')}>
-                {data && (
+                {data && data.length > 0 && (
                   <div className={cx('item-first')}>
                   <Link to={data[0].id}>
                       <img

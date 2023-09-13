@@ -5,8 +5,8 @@
 }
 
 .create{
-    width: 800px;
-    margin-left: 30px;  
+    width: 900px;
+    // margin-left: 30px;  
     border-right: 2px solid var(--default-color-hover);
     .create-news{
         border: 2px solid var(--default-color-hover);
@@ -68,7 +68,7 @@
 
     .sapo{
         margin: 10px 0;
-        width: 95%;
+        width: 100%;
         min-height: 100px;
         font-size: 18px;
     }
@@ -132,7 +132,7 @@
 }
 
 .middle{
-    padding: 20px;
+    padding: 2px;
 }
 
 .preview{

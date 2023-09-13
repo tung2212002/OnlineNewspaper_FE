@@ -67,6 +67,7 @@ function CreateNewsComponent() {
         formData.append('main_category', categoryMain);
         formData.append('sub_category', categorySub);
 
+
         try {
             const response = await createPostService(formData);
             if (response.status === 201) {

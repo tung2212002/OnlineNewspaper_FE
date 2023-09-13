@@ -10,7 +10,6 @@ import ParamContext from '../../context/ParamContext';
 const cx = classNames.bind(styles);
 
 function Find({ type = '', params = {} }) {
-
     const { setParam } = useContext(ParamContext);
 
     const MAX_CONTENT_LENGTH = 100;
@@ -38,14 +37,13 @@ function Find({ type = '', params = {} }) {
                         return;
                     }
                     setData(response.data);
-                    setAddData(null)
-                    setIndex(0)
+                    setAddData(null);
+                    setIndex(0);
                     setNotFound(false);
                     if (response.data.length >= 15) {
                         setIndex((index) => index + response.data.length);
                         setButtonMore(true);
-                    }
-                    else {
+                    } else {
                         setButtonMore(false);
                     }
                 }
@@ -65,14 +63,13 @@ function Find({ type = '', params = {} }) {
                         setNotFound(true);
                     }
                     setData(response.data);
-                    setAddData(null)
-                    setIndex(0)
+                    setAddData(null);
+                    setIndex(0);
                     setNotFound(false);
                     if (response.data.length >= 15) {
                         setIndex((index) => index + response.data.length);
                         setButtonMore(true);
-                    }
-                    else {
+                    } else {
                         setButtonMore(false);
                     }
                 }
@@ -94,11 +91,14 @@ function Find({ type = '', params = {} }) {
             try {
                 const response = await getListsPostByCategoryService(paramsGet);
                 if (response.status === 200) {
-                    setAddData([...data, ...response.data]);
+                    if (addData === null) {
+                        setAddData(response.data);
+                    } else {
+                        setAddData([...addData, ...response.data]);
+                    }
                     if (response.data.length < 10) {
                         setButtonMore(false);
-                    }
-                    else {
+                    } else {
                         setIndex((index) => index + response.data.length);
                         setButtonMore(true);
                     }
@@ -116,11 +116,14 @@ function Find({ type = '', params = {} }) {
             try {
                 const response = await getListsPostByTagService(paramsGet);
                 if (response.status === 200) {
-                    setAddData([...data, ...response.data]);
+                    if (addData === null) {
+                        setAddData(response.data);
+                    } else {
+                        setAddData([...addData, ...response.data]);
+                    }
                     if (response.data.length < 10) {
                         setButtonMore(false);
-                    }
-                    else {
+                    } else {
                         setIndex((index) => index + response.data.length);
                         setButtonMore(true);
                     }

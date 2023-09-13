@@ -79,8 +79,6 @@ function NewsDetail() {
         navigator.clipboard.writeText(link);
     };
 
-    console.log(countComment);
-
     useEffect(() => {
         fetchData();
     }, []);

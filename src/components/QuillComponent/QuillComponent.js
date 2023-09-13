@@ -37,6 +37,12 @@ function QuillComponent({ contentHTML, onChangeQuill }) {
             ['blockquote', 'code-block'],
             [{ color: [] }, { background: [] }], // dropdown with defaults from theme
             ['clean'], // Remove formatting option
+            [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+            [{ 'direction': 'rtl' }],                         // text direction
+            [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
+            [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
+            [{ 'header': 1 }, { 'header': 2 }],               // custom button values
+
         ],
         imageResize: {
             modules: ['Resize', 'DisplaySize'],
@@ -64,6 +70,9 @@ function QuillComponent({ contentHTML, onChangeQuill }) {
         'background',
         'font',
         'clean',
+        'size',
+        'direction',
+        'script',
     ];
 
     return (

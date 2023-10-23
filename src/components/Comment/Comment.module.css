@@ -1,0 +1,236 @@
+.container {
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  background: #fafafa;
+  padding: 16px;
+}
+.container textarea {
+  background: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 7px 8px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #8b8b8b;
+  margin-bottom: 14px;
+  height: 80px;
+  outline: 0;
+}
+
+.label {
+  font-family: Merriweather;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 28px;
+  border-bottom: 1px solid #0098d1;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #292929;
+  margin-bottom: 14px;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.button-box button {
+  display: inline-block;
+  background: #0098d1;
+  border-radius: 4px;
+  padding: 6px 24px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #292929;
+  margin-bottom: 4px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 13px;
+}
+
+.filter-box {
+  color: #ccc;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  line-height: 1.3;
+  margin-top: 15px;
+}
+
+.filter {
+  font: 400 16px/1.3 arial;
+  position: relative;
+  color: #9f9f9f;
+  margin-right: 20px;
+  padding-bottom: 13px;
+}
+
+.active {
+  color: #0098d1 !important;
+  font-weight: 700;
+  border-bottom: 1px solid #0098d1;
+}
+
+.list-comment {
+  padding-top: 20px;
+}
+
+.item {
+  display: flex;
+  margin-bottom: 4px;
+  padding-bottom: 24px;
+  padding: 16px 0 4px 16px;
+  border-left: 1px solid #ebebeb;
+}
+
+.avatar {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 13px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.item-content {
+  width: calc(100% - 53px);
+}
+
+.user-name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #292929;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.text-comment {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #292929;
+  margin-bottom: 6px;
+}
+
+.item-bottom .like-count,
+.item-bottom .button-reply {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #8b8b8b;
+  display: flex;
+  align-items: center;
+  display: inline-block;
+}
+
+.list-comment > .item {
+  border-left: 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.button-like {
+  margin-right: 24px;
+  margin-bottom: 0;
+  display: inline-block;
+  width: 50px;
+}
+.button-like .is-not-like {
+  transform: translateY(-1px);
+}
+
+.button-reply {
+  display: block;
+  margin-right: 24px;
+  margin-bottom: 0;
+}
+
+.reply-box {
+  width: 100%;
+  border-left: 1px solid #ebebeb;
+  padding-left: 16px;
+  margin: 0;
+}
+
+.item-reply {
+  display: flex;
+  margin: 0;
+  padding: 16px 0;
+}
+
+.time-ago {
+  font-weight: 400;
+}
+
+.icon-like {
+  font-size: 16px;
+  padding: 5px;
+}
+.icon-like:hover {
+  cursor: pointer;
+}
+
+.is-like {
+  color: #0098d1 !important;
+}
+
+.load-more {
+  background: #fafafc;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #8b8b8b;
+  border: 1px solid #ebebeb !important;
+  border-radius: 4px !important;
+  background: #fff !important;
+  color: #0098d1 !important;
+}
+.load-more:hover {
+  background: #0098d1;
+  color: #fff;
+  cursor: pointer;
+}/*# sourceMappingURL=Comment.module.css.map */

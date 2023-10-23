@@ -1,0 +1,13 @@
+.wrapper {
+  width: 1150px !important;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 18.5px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=HomeFocus.module.css.map */

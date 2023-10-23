@@ -1,0 +1,21 @@
+.btn-Top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 42px;
+  width: 42px;
+  font-size: 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  z-index: 1;
+  background-color: rgb(243, 235, 235);
+  display: none;
+}
+.btn-Top div {
+  font-size: 12px;
+  transform: translateY(-4px);
+}
+
+.visible {
+  display: block !important;
+}/*# sourceMappingURL=BackTop.module.css.map */

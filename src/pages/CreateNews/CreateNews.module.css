@@ -1,0 +1,12 @@
+.wrapper {
+  margin-top: 24px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+}
+.container a:hover {
+  color: var(--default-color-hover);
+}/*# sourceMappingURL=CreateNews.module.css.map */

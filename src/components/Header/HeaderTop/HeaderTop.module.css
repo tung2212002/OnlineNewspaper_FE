@@ -1,0 +1,74 @@
+.wrapper {
+  background: #fafafa;
+  padding: 8.5px 0;
+}
+.wrapper a {
+  cursor: pointer;
+}
+.wrapper a:hover {
+  opacity: 0.8;
+}
+.wrapper .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1630px;
+  padding: 0 15px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.list, .social, .items {
+  align-items: center;
+  display: flex;
+}
+
+.list .weather, .list .items-right {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.list .weather .text, .list .weather .icon-down, .list .items-right .text, .list .items-right .icon-down {
+  margin: 0 4px;
+}
+.list .weather a, .list .items-right a {
+  height: 24px;
+}
+
+.list-weather {
+  position: relative;
+}
+
+.social .item {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+
+.items, .item, .weather, .items-right {
+  border-right: 1px solid #d9d9d9;
+  padding-right: 8px;
+  margin-right: 8px;
+  height: 23px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  color: #454545;
+}
+.items a, .item a, .weather a, .items-right a {
+  line-height: 23px;
+}
+
+.items:last-child, .item:last-child {
+  border-right: 0;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.weather {
+  min-width: 134px;
+}/*# sourceMappingURL=HeaderTop.module.css.map */

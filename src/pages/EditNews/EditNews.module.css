@@ -1,0 +1,15 @@
+.wrapper {
+  margin-top: 24px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+}
+.container a:hover {
+  color: var(--default-color-hover);
+}/*# sourceMappingURL=EditNews.module.css.map */

@@ -28,10 +28,10 @@ function HeaderTop() {
             q: city,
         };
         try {
-            setWeather('...');
+            // setWeather('...');
 
-            // const response = await getWeatherService(params);
-            // setWeather(Math.round(response.main.temp-273.15));
+            const response = await getWeatherService(params);
+            setWeather(Math.round(response.main.temp - 273.15));
         } catch (err) {
             setWeather('...');
         }

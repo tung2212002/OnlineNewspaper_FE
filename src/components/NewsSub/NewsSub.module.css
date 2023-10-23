@@ -1,0 +1,15 @@
+.container {
+  width: 1150px !important;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.news-sub-flex {
+  display: flex;
+}
+
+.news-sub-main {
+  width: calc(100% - 385px);
+}/*# sourceMappingURL=NewsSub.module.css.map */

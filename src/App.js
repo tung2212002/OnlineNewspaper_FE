@@ -1,11 +1,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { HelmetProvider } from "react-helmet-async";
 import { publicRoutes } from './routes/routes';
 import DefaultLayout from './layouts/DefaultLayout/DefaultLayout';
 import BackTop from './components/BackTop/BackTop';
 import { AuthProvider } from './context/AuthContext';
 import { ParamProvider } from './context/ParamContext';
-import NotFound from './pages/NotFound/NotFound';
 
 function App() {
     return (

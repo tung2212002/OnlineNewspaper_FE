@@ -3,7 +3,6 @@ import styles from './BoxNewsTag.module.scss';
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowTrendUp } from '@fortawesome/free-solid-svg-icons';
-import { listTag } from '../../assets';
 import { getListTagTrendingService, getListsPostByCategoryService } from '../../services/postService';
 import { useEffect, useState } from 'react';
 import NewsSubMain from '../NewsSub/NewsSubMain/NewsSubMain';

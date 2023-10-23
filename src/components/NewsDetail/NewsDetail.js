@@ -1,11 +1,11 @@
 import { useContext, useEffect, useState } from 'react';
-import AuthContext from '../../context/AuthContext';
-import ParamContext from '../../context/ParamContext';
 import { Link, useParams } from 'react-router-dom';
 import styles from './NewsDetail.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleUp, faArrowCircleDown, faPrint, faMessage, faLink } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind';
+// import AuthContext from '../../context/AuthContext';
+import ParamContext from '../../context/ParamContext';
 import { getPostsService } from '../../services/postService';
 import convertTime from '../../utils/convertTime';
 import { Helmet } from 'react-helmet-async';
@@ -17,7 +17,7 @@ import 'react-quill/dist/quill.snow.css';
 const cx = classNames.bind(styles);
 
 function NewsDetail() {
-    const { user, showlogin, setShowlogin } = useContext(AuthContext);
+    // const { user, showlogin, setShowlogin } = useContext(AuthContext);
     const { setParam } = useContext(ParamContext);
     const [data, setData] = useState(null);
     const { id } = useParams();

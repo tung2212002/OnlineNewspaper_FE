@@ -1,0 +1,224 @@
+.container {
+  width: 1150px !important;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+}
+.container a {
+  font-family: Merriweather !important;
+}
+.container .header {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #0098d1;
+}
+.container .header h1 {
+  font-size: 32px;
+  font-family: Merriweather;
+  font-weight: 700;
+  line-height: 48px;
+  color: #292929;
+}
+.container .button-more button {
+  margin: 0 20px 20px 0 !important;
+  padding: 10px;
+  background: #fafafc;
+  border: 1px solid #ebebeb;
+}
+.container .button-more .btn-active {
+  background-color: #8c5ac5;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.content-left {
+  text-align: center;
+}
+.content-left h2 {
+  font-size: 32px;
+  font-family: Merriweather;
+  font-weight: 700;
+  line-height: 46px;
+  margin-bottom: 16px;
+}
+
+.content-left-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-right {
+  padding-left: 16px;
+  flex: 1;
+}
+.content-right span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #8b8b8b;
+  display: block;
+  margin-bottom: 8px;
+}
+.content-right h2 {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 26px;
+  margin-bottom: 8px;
+  display: block;
+}
+.content-right p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #454545;
+  padding-left: 28px;
+  display: block;
+  position: relative;
+}
+.content-right p::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  border: 1px solid #8b8b8b;
+  border-radius: 50%;
+}
+.content-right img {
+  margin: 10px 20px;
+}
+
+.content-right > div {
+  margin: 0 0 30px 10px;
+}
+
+.content-bottom {
+  padding-top: 24px;
+  border-top: 1px solid #ebebeb;
+  display: flex;
+}
+
+.content-bottom > div {
+  width: calc(25% - 24px);
+  margin-right: 32px;
+}
+.content-bottom > div h2 {
+  font-size: 14px;
+}
+
+.container > .content-left img {
+  margin-right: 20px;
+}
+
+.container > .content-left > div {
+  padding: 32px 0;
+  border-bottom: 1px solid #ebebeb;
+  display: flex;
+}
+
+.container > .content-left {
+  text-align: left;
+}
+.container > .content-left span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #8b8b8b;
+  display: block;
+  margin-bottom: 8px;
+}
+.container > .content-left h2 {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 26px;
+  margin-bottom: 8px;
+  display: block;
+}
+.container > .content-left p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #454545;
+  padding-left: 28px;
+  display: block;
+  position: relative;
+}
+.container > .content-left p::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  border: 1px solid #8b8b8b;
+  border-radius: 50%;
+}
+
+.btn {
+  padding: 5px 10px;
+  background: #fafafc;
+  border: 1px solid #ebebeb;
+  height: 40px;
+  width: 70px;
+  margin-left: 20px;
+}
+.btn:hover {
+  background: #67c4e6;
+  cursor: pointer;
+}
+
+.content-right .box-news {
+  position: relative;
+}
+.content-right .box-news .button-edit {
+  position: absolute;
+  bottom: 18px;
+  right: 80px;
+}
+.content-right .box-news .button-delete {
+  position: absolute;
+  bottom: 18px;
+  right: 0;
+}
+
+.content-left .box-news {
+  position: relative;
+}
+.content-left .box-news .button-edit {
+  position: absolute;
+  bottom: 33px;
+  right: 80px;
+}
+.content-left .box-news .button-delete {
+  position: absolute;
+  bottom: 33px;
+  right: 0;
+}
+
+.btn-active {
+  background-color: #295768;
+}
+
+.toast {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 210px;
+  right: 10px;
+  z-index: 999999;
+}/*# sourceMappingURL=ManageNews.module.css.map */

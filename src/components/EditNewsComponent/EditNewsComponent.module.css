@@ -1,0 +1,133 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.create {
+  width: 900px;
+  border-right: 2px solid var(--default-color-hover);
+}
+.create .create-news {
+  border: 2px solid var(--default-color-hover);
+  padding-left: 30px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.create h1 {
+  margin-top: 16px;
+}
+.create .label-image {
+  border-top: 1px solid #ebebeb;
+  padding-top: 20px;
+}
+.create .category {
+  height: 44px;
+  padding: 10px 0 70px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+.create .category label, .create .category select {
+  margin: 4px 0;
+}
+.create input.title {
+  width: 90%;
+  font-size: 18px;
+  margin: 10px 0 0px 0;
+}
+.create button {
+  display: block;
+}
+.create .add-img {
+  font-size: 20px;
+  margin: 14px 0 14px 140px;
+}
+.create .add-img:hover {
+  color: var(--default-color-hover);
+}
+.create .img-files {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+.create .img-files img {
+  width: 300px;
+  height: 300px;
+}
+.create .fa-solid {
+  font-size: 30px;
+}
+.create .sapo {
+  margin: 10px 0;
+  width: 100%;
+  min-height: 100px;
+  font-size: 18px;
+}
+.create .label-content {
+  padding: 16px 0;
+  border-top: 1px solid #ebebeb;
+}
+.create .tags {
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  margin-top: 20px;
+}
+.create .tags .tag {
+  font-size: 18px;
+  margin: 0 0px 10px 0;
+  border: 1px solid #ebebeb;
+  padding: 2px;
+}
+.create .add-tag {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin: 10px 0;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  background-color: #ebebeb;
+  padding: 10px;
+}
+.create .add-tag .fa-plus {
+  margin-left: 10px;
+}
+.create .add-tag:hover {
+  color: var(--default-color-hover);
+}
+.create .remove-tag {
+  display: inline;
+  margin-right: 20px;
+}
+.create .post {
+  transform: translateX(300px);
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.create .post .post-text {
+  font-size: 20px;
+  padding: 10px 40px;
+  border: 1px solid #ebebeb;
+  background-color: #ebebeb;
+  border-radius: 10px;
+}
+.create .post .post-text:hover {
+  background-color: var(--default-color-hover);
+  color: white;
+}
+
+.middle {
+  padding: 2px;
+}
+
+.preview {
+  width: 850px !important;
+  border-left: 2px solid var(--default-color-hover);
+  padding-left: 30px;
+}
+
+.toast {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 210px;
+  right: 10px;
+  z-index: 999999;
+}/*# sourceMappingURL=EditNewsComponent.module.css.map */

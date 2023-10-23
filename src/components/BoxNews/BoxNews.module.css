@@ -1,0 +1,41 @@
+.box-news img {
+  width: 100%;
+  min-height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-horizontal {
+  display: flex;
+}
+
+.news-title {
+  color: black;
+  overflow: hidden;
+  max-height: 96px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: #292929;
+  display: block;
+  margin-bottom: 8px;
+}
+.news-title:hover {
+  color: var(--default-color-hover);
+}
+
+.news-content {
+  color: var(--brown);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  overflow: hidden;
+  max-height: 110px;
+}/*# sourceMappingURL=BoxNews.module.css.map */

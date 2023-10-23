@@ -1,5 +1,5 @@
 import 'react-quill/dist/quill.snow.css';
-import ReactQuill, { Quill } from 'react-quill';
+import ReactQuill from 'react-quill';
 import styles from './QuillComponent.module.scss';
 import classNames from 'classnames/bind';
 import ImageResize from 'quill-image-resize-module-react';
@@ -8,23 +8,21 @@ ReactQuill.Quill.register('modules/imageResize', ImageResize);
 
 const cx = classNames.bind(styles);
 
-const VideoModule = ReactQuill.Quill.import("formats/video");
+const VideoModule = ReactQuill.Quill.import('formats/video');
 
 class CustomVideo extends VideoModule {
-  static create(value) {
-    const node = super.create(value);
-    node.setAttribute("width", "100%"); // Thay đổi kích thước chiều rộng của video
-    node.setAttribute("height", "385px"); // Thay đổi kích thước chiều cao của video
-    return node;
-  }
+    static create(value) {
+        const node = super.create(value);
+        node.setAttribute('width', '100%'); 
+        node.setAttribute('height', '385px');
+        return node;
+    }
 }
 
 ReactQuill.Quill.register(CustomVideo, true);
 
-
 function QuillComponent({ contentHTML, onChangeQuill }) {
-
-  const quillRef = useRef(null);
+    const quillRef = useRef(null);
 
     const modules = {
         toolbar: [
@@ -37,12 +35,11 @@ function QuillComponent({ contentHTML, onChangeQuill }) {
             ['blockquote', 'code-block'],
             [{ color: [] }, { background: [] }], // dropdown with defaults from theme
             ['clean'], // Remove formatting option
-            [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
-            [{ 'direction': 'rtl' }],                         // text direction
-            [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
-            [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
-            [{ 'header': 1 }, { 'header': 2 }],               // custom button values
-
+            [{ size: ['small', false, 'large', 'huge'] }], // custom dropdown
+            [{ direction: 'rtl' }], // text direction
+            [{ indent: '-1' }, { indent: '+1' }], // outdent/indent
+            [{ script: 'sub' }, { script: 'super' }], // superscript/subscript
+            [{ header: 1 }, { header: 2 }], // custom button values
         ],
         imageResize: {
             modules: ['Resize', 'DisplaySize'],
@@ -78,7 +75,15 @@ function QuillComponent({ contentHTML, onChangeQuill }) {
     return (
         <div className={cx('wrapper', 'ql-snow')}>
             <div className={cx('container', 'ql-editor')}>
-                <ReactQuill theme="snow" modules={modules} formats={formats} value={contentHTML} onChange={onChangeQuill} className="ql-editor" ref={quillRef} />
+                <ReactQuill
+                    theme="snow"
+                    modules={modules}
+                    formats={formats}
+                    value={contentHTML}
+                    onChange={onChangeQuill}
+                    className="ql-editor"
+                    ref={quillRef}
+                />
             </div>
         </div>
     );

@@ -1,0 +1,34 @@
+.wrapper {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.category {
+  margin-bottom: 32px;
+}
+
+.box-category {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #292929;
+}
+
+.box-news {
+  width: calc(100% + 32px);
+  margin-left: -16px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: -16px;
+}
+.box-news .box-news-item {
+  width: 25%;
+  padding: 16px;
+}
+.box-news .box-news-item h2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+}/*# sourceMappingURL=NewsSubMain.module.css.map */

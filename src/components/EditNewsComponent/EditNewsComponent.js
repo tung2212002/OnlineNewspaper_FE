@@ -6,12 +6,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlus, faFileArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { itemsNav } from '../../assets';
 import PreView from '../PreView/PreView';
-import { createPostService, editPostService } from '../../services/authorService';
+import { editPostService } from '../../services/authorService';
 import Toast from '../Toast/Toast';
 import { getPostsService } from '../../services/postService';
 import { useParams } from 'react-router-dom';
 import NotFound from '../../pages/NotFound/NotFound';
-import CustomStyles from '../../assets/CustomQuill.module.scss';
 
 const cx = classNames.bind(styles);
 
@@ -102,10 +101,6 @@ function EditNewsComponent() {
 
     const fetchDataStart = async () => {
         try {
-            const params = {
-                id: id,
-            };
-
             const response = await getPostsService(id.toString());
             if (response.status === 200) {
                 setTitle(response.data.title);

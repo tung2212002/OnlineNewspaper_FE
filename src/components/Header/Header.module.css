@@ -1,0 +1,9 @@
+.wrapper {
+  font-family: Inter;
+  font-style: normal;
+  background-color: #fff;
+  z-index: 1000;
+  position: sticky;
+  top: -159px;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=Header.module.css.map */

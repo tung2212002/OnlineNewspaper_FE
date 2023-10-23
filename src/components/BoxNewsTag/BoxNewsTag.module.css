@@ -1,0 +1,64 @@
+.box-news-tag {
+  height: 77px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.btn-news {
+  display: flex;
+  align-items: center;
+}
+.btn-news .icon {
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 50%;
+  background-color: #ebebeb;
+  margin-right: 8px;
+}
+
+.list-tag {
+  width: calc(100% - 130px);
+  height: 100%;
+  display: flex;
+  box-sizing: content-box;
+  justify-content: center;
+}
+.list-tag .item {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 4px 16px;
+  border: 1px solid #ebebeb;
+  border-radius: 100px;
+  color: #0098d1;
+  background: 0 0;
+  margin-right: 16px;
+}
+
+.box-news {
+  width: calc(100% + 32px);
+  margin-left: -16px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: -16px;
+}
+.box-news .box-news-item {
+  width: 25%;
+  padding: 16px;
+}
+.box-news .box-news-item h2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #292929;
+  display: block;
+}
+.box-news .box-news-item h2:hover {
+  color: var(--default-color-hover);
+}/*# sourceMappingURL=BoxNewsTag.module.css.map */
